@@ -1,4 +1,22 @@
 package com.platzi.marker;
 
-public class HolaMundoController {
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/")
+public class HolaMundoController
+{
+    @GetMapping("/hola")
+    public String saludar()
+    {
+        return "platzi-jhjhgjghj";
+    }
+
+    @GetMapping("/adios")
+    public String despido()
+    {
+        return "adios";
+    }
 }
